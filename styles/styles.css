@@ -78,8 +78,6 @@ body {
 }
 
 .hero {
-  width: 1200px;
-  height: 485px;
   margin: 0 auto;
   background-color: #808080;
   background-image: url("../images/divider.png"), url("../images/index-background.jpg");
@@ -202,8 +200,6 @@ body {
 }
 
 .newsletter {
-  width: 1200px;
-  height: 415px;
   margin: 0 auto;
   background-color: #ffffff;
   text-align: center;
@@ -274,12 +270,9 @@ body {
 }
 
 .filter {
-  width: 1200px;
-  height: 412px;
   margin: 0 auto;
   background-color: #808080;
   background-image: url("../images/landscape2.jpg");
-  background-position: center bottom, center;
   background-repeat: no-repeat, no-repeat;
 }
 
