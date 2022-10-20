@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
+
   <body>
     <header class="page-header">
       <nav class="navigation">
@@ -37,31 +40,38 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда</a>
+            <a class="navigation-button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
+
     <main class="main-index">
       <section class="hero">
         <h1 class="visually-hidden">Седона</h1>
-        <img src="images/index-background.jpg" width="1200" height="485" alt="Вид горы">
-        <img src="images/divider.png" width="1200" height="57" alt="Вид горы">
-        <img src="images/welcome.svg" width="187.7" height="44.7" alt="Welcome">
-        <img src="images/tothegorgeous.svg" width="256" height="28.78" alt="to the gorgeous">
-        <img src="images/sedonalogo.svg" width="456.7" height="212.77" alt="Sedona because the grand canyon sucks!">
+        <ul class="hero-list">
+          <li class="hero-item">
+            <img src="images/welcome.svg" width="188" height="45" alt="Welcome">
+          </li>
+          <li class="hero-item">
+            <img src="images/tothegorgeous.svg" width="256" height="29" alt="to the gorgeous">
+          </li>
+          <li class="hero-item">
+            <img src="images/sedonalogo.svg" width="457" height="213" alt="Sedona because the grand canyon sucks!">
+          </li>
+        </ul>
       </section>
-      <section class="properties">
+      <section class="characteristics">
         <h2 class="visually-hidden">Характеристики</h2>
-        <p class="properties-description">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-        <p class="properties-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <p class="characteristics-description">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="characteristics-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
           <li class="advantages-item">
-            <h3 class="advantages-title">Настоящий городок</h3>
-            <P Class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</P>
+            <h3 class="advantages-name">Настоящий городок</h3>
+            <P Class="advantages-text">Седона — не аттракцион для туристов, там течёт своя жизнь</P>
           </li>
           <li class="advantages-item">
             <img src="images/city.jpg" width="800" height="384" alt="Город Седона">
@@ -82,8 +92,8 @@
             <img src="images/bridge.jpg" width="800" height="384" alt="Мост дьявола">
           </li>
           <li class="advantages-item">
-            <h3 class="advantages-title">Там есть мост дьявола</h3>
-            <P Class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</P>
+            <h3 class="advantages-name">Там есть мост дьявола</h3>
+            <P Class="advantages-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</P>
           </li>
         </ul>
       </section>
@@ -91,17 +101,17 @@
         <h2 class="visually-hidden">Особенности</h2>
         <ul class="properties-list">
           <li class="properties-item">
-            <img src="images/home-icon.svg" width="75" height="72" alt="Домик">
+            <img class="properties-image" src="images/home-icon.svg" width="75" height="72" alt="Домик">
             <h3 class="properties-title">Жильё</h3>
             <P Class="properties-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</P>
           </li>
           <li class="properties-item">
-            <img src="images/iconfood.svg" width="75" height="72" alt="Бургер">
+            <img class="properties-image" src="images/iconfood.svg" width="75" height="72" alt="Бургер">
             <h3 class="properties-title">Еда</h3>
             <P Class="properties-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</P>
           </li>
           <li class="properties-item">
-            <img src="images/present.svg" width="75" height="72" alt="Подарок">
+            <img class="properties-image" src="images/present.svg" width="75" height="72" alt="Подарок">
             <h3 class="properties-title">Сувениры</h3>
             <P Class="properties-description">Не только китайского, но и настоящего местного производства!</P>
           </li>
@@ -109,40 +119,43 @@
       </section>
       <section class="search">
         <h2 class="search-title">Заинтересовались?</h2>
-        <p class="search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+          Седоне</p>
         <a class="search-hotel" href="#">Поиск гостиницы в Седоне</a>
       </section>
-      <section class="newsletter">
-        <img src="images/landscape.jpg" width="1200" height="414.86" alt="Пейзаж">
-        <h2 class="newsletter-title">Подпишись на рассылку</h2>
-        <p class="newsletter-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <section class="newsletter newsletter--main">
+        <h2 class="newsletter-title newsletter-title--main">Подпишись на рассылку</h2>
+        <p class="newsletter-text newsletter-text--main">Только полезная информация и никакого спама, честное
+          бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="newsletter-email">Email</label>
-          <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
-          <button class="button newsletter-button" type="submit">ПОДПИСАТЬСЯ</button>
+          <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
+            id="newsletter-email" required>
+          <button class="newsletter-button" type="submit">ПОДПИСАТЬСЯ</button>
         </form>
       </section>
     </main>
     <footer class="page-footer">
-      <section class="footer-social"
-      <h2 class="visually-hidden">Мы в соцсетях</h2>
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
-          <a class="button" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">ВКонтакте</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Телеграм</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Ютуб</span>
-          </a>
-        </li>
-      </ul>
+      <section class="footer-social">
+        <h2 class="visually-hidden">Мы в соцсетях</h2>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="button" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
+      </section>
       <section class="footer-contacts">
         <h2 class="visually-hidden">Телефон</h2>
         <a class="contacts-phone" href="">+7 (812) 812-12-12</a>
@@ -153,4 +166,5 @@
       </section>
     </footer>
   </body>
+
 </html>

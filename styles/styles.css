@@ -1,0 +1,415 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.page-header {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.navigation-link {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+.navigation-link-current {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+.navigation-button {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.hero {
+  margin: 0 auto;
+  background-color: #808080;
+  background-image: url("../images/divider.png"), url("../images/index-background.jpg");
+  background-position: center bottom, center;
+  background-repeat: no-repeat, no-repeat;
+  text-align: center;
+}
+
+.characteristics-description {
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
+
+.characteristics-text {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: 400;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.advantages-name {
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  background-color: #82B3D3;
+  text-transform: uppercase;
+}
+
+.advantages-text {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  font-weight: 400;
+  text-align: center;
+  background-color: #82B3D3;
+}
+
+.advantages-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  font-weight: 400;
+  text-align: center;
+}
+
+.properties-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.properties-description {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  font-weight: 400;
+  text-align: center;
+}
+
+.search-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
+
+.search-text {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: 400;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.search-hotel {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.newsletter {
+  margin: 0 auto;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.newsletter--main {
+  background-image: url("../images/landscape.jpg");
+  background-position: center bottom, center;
+  background-repeat: no-repeat, no-repeat;
+  background-color: #808080;
+}
+
+.newsletter-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.newsletter-title--main {
+  color: #ffffff;
+}
+
+.newsletter-text {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: 400;
+  text-align: center;
+}
+
+.newsletter-text--main {
+  color: #ffffff;
+}
+
+.newsletter-button {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  background-color: #82B3D3;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page-footer a {
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.footer-social a {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.page-footer .htmlacademy-link {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.filter {
+  margin: 0 auto;
+  background-color: #808080;
+  background-image: url("../images/landscape2.jpg");
+  background-repeat: no-repeat, no-repeat;
+}
+
+.filter-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 60px;
+  line-height: 78px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.filter-breadcrumbs {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.filter-catalog-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.filter-catalog-list {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.filter-catalog button {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #82B3D3;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.filter-catalog input {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.result {
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.select-control {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  font-weight: 400;
+}
+
+.product-card {
+  background-color: #ffffff;
+}
+
+.product-card-link {
+  text-decoration: none;
+}
+
+.product-card-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.product-card-type {
+  font-weight: 400;
+}
+
+.product-card-price {
+  font-weight: 400;
+}
+
+.product-card-info {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.product-card-button {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  background-color: #82B3D3;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.hotels-raiting {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  font-weight: 400;
+  text-align: center;
+  background-color: #F2F2F2;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.pagination-link {
+  background-color: #82B3D3;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-decoration: none;
+}
