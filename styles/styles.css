@@ -68,7 +68,6 @@ body {
   width: 464px;
   margin-left: 30px;
   padding-right: 125px;
-
 }
 
 .navigation-user {
@@ -121,7 +120,6 @@ body {
 
 .hero {
   margin: 0 auto;
-  height: 485px;
   background-color: #808080;
   background-image: url("../images/divider.png"), url("../images/index-background.jpg");
   background-position: center bottom, center;
@@ -163,31 +161,46 @@ body {
   background-color: #ffffff;
 }
 
+.advantages-places {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-places-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0;
   padding: 0;
+}
+
+.advantages-points {
+  display: block;
+  width: 400px;
+  box-sizing: border-box;
+  background-color: #82B3D3;
+  padding: 85px;
 }
 
 .advantages-item {
   display: block;
   width: 400px;
-  background-color: #82B3D3;
-}
-
-.advantages-item-article {
+  box-sizing: border-box;
   background-color: #f3f8fc;
+  text-align: center;
+  padding: 85px;
 }
 
 .advantages-item-point {
   background-color: #e8f3fc;
-}
-
-.advantages-images {
-  display: block;
-  width: 800px;
 }
 
 .advantages-name {
@@ -197,11 +210,7 @@ body {
   color: #ffffff;
   font-weight: 700;
   text-align: center;
-  background-color: #82B3D3;
   text-transform: uppercase;
-  padding-left: 85px;
-  padding-right: 85px;
-  padding-top: 92px;
 }
 
 .advantages-text {
@@ -211,10 +220,6 @@ body {
   color: #ffffff;
   font-weight: 400;
   text-align: center;
-  background-color: #82B3D3;
-  padding-left: 85px;
-  padding-right: 85px;
-  padding-bottom: 111px;
 }
 
 .advantages-title {
@@ -225,55 +230,9 @@ body {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  padding-left: 85px;
-  padding-right: 85px;
-  padding-top: 103px;
 }
 
 .advantages-description {
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
-  color: #000000;
-  font-weight: 400;
-  text-align: center;
-  padding-left: 85px;
-  padding-right: 85px;
-  padding-bottom: 121px;
-}
-
-.properties-list {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  width: 1200px;
-  margin: 0;
-  padding: 0;
-}
-
-.properties-item {
-  display: block;
-  width: 400px;
-  background-color: #e8f3fc;
-  padding: 80px 85px 81px 85px;
-  margin: 0;
-}
-
-.properties-item-article {
-  background-color: #f3f8fc;
-}
-
-.properties-title {
-  font-family: "PT Sans", sans-serif;
-  font-size: 24px;
-  line-height: 28px;
-  color: #000000;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.properties-description {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
