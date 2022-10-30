@@ -21,7 +21,7 @@
             <a class="navigation-link" href="#">О Cедоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link-current" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
@@ -49,14 +49,14 @@
     <main class="main-inner">
       <div class="page-container">
         <section class="filter">
+          <h1 class="filter-title">Гостиницы Седоны</h1>
           <div class="filter-hotels">
-            <h1 class="filter-title">Гостиницы Седоны</h1>
+            <img class="filter-hotels-icon" src="images/iconshome.svg" width="13" height="15" alt="Домик">
+            <img class="filter-hotels-icon" src="images/arrow.svg" width="8" height="20" alt="Стрелка">
             <a class="filter-breadcrumbs">Гостиницы</a>
           </div>
           <div class="filter-products">
-            <!--временно добавим атрибут hidden, чтобы заголовок не рушил сетку-->
             <h2 class="visually-hidden" hidden>Список товаров с фильтрами</h2>
-            <!--Фильтрация-->
             <form class="filter-catalog" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="filter-catalog-group">
                 <legend class="filter-catalog-title">Инфраструктура:</legend>
@@ -107,7 +107,7 @@
               </fieldset>
               <div class="buttons">
                 <button class="button" type="submit">Применить</button>
-                <input class="input" type="reset">Сбросить
+                <input class="input" type="reset">
               </div>
             </form>
           </div>
@@ -115,21 +115,23 @@
 
         <section class="product">
           <h2 class="visually-hidden">Каталог гостиниц</h2>
-          <span class="result">Найдено гостиниц: 38</span>
-          <select class="select-control" aria-label="Сортировка">
-            <option value="popular">Сначала дешевые</option>
-            <option value="popular">Сначала дорогие</option>
-            <option value="popular">Сначала популярные</option>
-          </select>
-          <a class="button" href="#">
-            <span class="visually-hildden">Показать карточки</span>
-          </a>
-          <a class="button" href="#">
-            <span class="visually-hildden">Показать карточки с названиями</span>
-          </a>
-          <a class="button" href="#">
-            <span class="visually-hildden">Показать список</span>
-          </a>
+          <div class="sorting-container">
+            <span class="result">Найдено гостиниц: 38</span>
+            <select class="select-control" aria-label="Сортировка">
+              <option value="popular">Сначала дешевые</option>
+              <option value="popular">Сначала дорогие</option>
+              <option value="popular">Сначала популярные</option>
+            </select>
+            <a class="button" href="#">
+              <span class="visually-hildden">Показать карточки</span>
+            </a>
+            <a class="button" href="#">
+              <span class="visually-hildden">Показать карточки с названиями</span>
+            </a>
+            <a class="button" href="#">
+              <span class="visually-hildden">Показать список</span>
+            </a>
+          </div>
           <ul class="product-list">
             <li class="product-card">
               <img class="product-card-image" src="images/hotel1.jpg" width="300" height="212" alt="Amara Resort & Spa">
@@ -189,7 +191,7 @@
               <p class="hotels-raiting">Рейтинг: 5,0</p>
             </li>
           </ul>
-
+          <img class="product-image" src="images/line.svg" width="1060" alt="Линия">
           <ul class="pagination">
             <li class="pagination-item">
               <a class="pagination-link pagination-current" href="#">1</a>
