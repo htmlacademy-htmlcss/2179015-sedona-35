@@ -85,6 +85,7 @@ body {
 
 .navigation-user {
   display: flex;
+  align-items: center;
   max-width: 310px;
   margin-left: auto;
   margin-right: 70px;
@@ -132,7 +133,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   padding: 8px 34px;
-  margin: 14px 0;
+  margin: 0;
 }
 
 .main-container {
@@ -293,9 +294,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   padding: 0;
-  margin: 0;
-  margin-left: 27px;
-  margin-right: 27px;
+  margin: 0 27px;
 }
 
 .advantages-description {
@@ -309,10 +308,12 @@ body {
 }
 
 .search {
-  display: block;
-  text-align: center;
-  margin: 0;
-  padding: 96px 304px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 592px;
+  margin: 96px auto;
+  padding: 0;
 
 }
 
@@ -356,11 +357,13 @@ body {
 }
 
 .newsletter {
-  display: block;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin-bottom: 104px;
   background-color: #ffffff;
-  text-align: center;
-  padding: 96px 258px;
+  padding: 0;
 }
 
 .newsletter--main {
@@ -368,6 +371,7 @@ body {
   background-position: center bottom, center;
   background-repeat: no-repeat, no-repeat;
   background-color: #808080;
+  height: 415px;
 }
 
 .newsletter-title {
@@ -379,6 +383,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   padding: 0;
+  padding-top: 96px;
   margin: 0;
 }
 
@@ -393,6 +398,7 @@ body {
   color: #000000;
   font-weight: 400;
   text-align: center;
+  width: 475px;
   padding-top: 20px;
   padding-bottom: 54px;
   margin: 0;
@@ -531,6 +537,7 @@ body {
 .filter-catalog {
   display: flex;
   flex-direction: row;
+  width: 1087px;
   margin: 0;
   padding: 0;
   padding-bottom: 70px;
@@ -542,10 +549,10 @@ body {
   padding: 0;
 }
 
-.buttons {
+.filter-catalog-buttons {
   display: flex;
   flex-direction: column;
-  margin-left: 525px;
+  margin-left: auto;
 }
 
 .filter-catalog-title {
@@ -562,13 +569,12 @@ body {
   line-height: 21px;
   color: #ffffff;
   font-weight: 400;
-  max-height: 157px;
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.buttons button {
+.filter-catalog-buttons button {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -582,7 +588,7 @@ body {
   margin: 0;
 }
 
-.buttons input {
+.filter-catalog-buttons input {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;

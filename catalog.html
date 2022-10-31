@@ -105,9 +105,9 @@
                   </li>
                 </ul>
               </fieldset>
-              <div class="buttons">
+              <div class="filter-catalog-buttons">
                 <button class="button" type="submit">Применить</button>
-                <input class="input" type="reset">
+                <input class="input" type="reset" value="Сбросить">
               </div>
             </form>
           </div>
@@ -118,18 +118,18 @@
           <div class="sorting-container">
             <span class="result">Найдено гостиниц: 38</span>
             <select class="select-control" aria-label="Сортировка">
-              <option value="popular">Сначала дешевые</option>
-              <option value="popular">Сначала дорогие</option>
+              <option value="cheap">Сначала дешевые</option>
+              <option value="expensive">Сначала дорогие</option>
               <option value="popular">Сначала популярные</option>
             </select>
             <a class="button" href="#">
-              <span class="visually-hildden">Показать карточки</span>
+              <span class="visually-hidden">Показать карточки</span>
             </a>
             <a class="button" href="#">
-              <span class="visually-hildden">Показать карточки с названиями</span>
+              <span class="visually-hidden">Показать карточки с названиями</span>
             </a>
             <a class="button" href="#">
-              <span class="visually-hildden">Показать список</span>
+              <span class="visually-hidden">Показать список</span>
             </a>
           </div>
           <ul class="product-list">
@@ -191,7 +191,7 @@
               <p class="hotels-raiting">Рейтинг: 5,0</p>
             </li>
           </ul>
-          <img class="product-image" src="images/line.svg" width="1060" alt="Линия">
+          <hr width="1060px" color="#E6E6E6">
           <ul class="pagination">
             <li class="pagination-item">
               <a class="pagination-link pagination-current" href="#">1</a>
