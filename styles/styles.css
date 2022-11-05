@@ -667,11 +667,9 @@ body {
   column-gap: 20px;
   margin: 20px;
   background-color: #ffffff;
-  width: 340px;
 }
 
 .product-card-image {
-  grid-column: 1 / -1;
   object-fit: contain;
 }
 
