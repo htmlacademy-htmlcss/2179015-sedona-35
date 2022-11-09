@@ -34,7 +34,8 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <svg class="navigation-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="navigation-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M9.9 19a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5 6.1 6.9 6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"
                   fill="#000" />
@@ -200,6 +201,57 @@
         </section>
       </div>
     </footer>
+
+    <div class="modal-container">
+      <div class="modal modal-auth">
+        <button class="modal-close-button" type="button">
+          <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14.5 1.8 13.2.5 7.5 6.2 1.8.5.5 1.8l5.7 5.7-5.7 5.7 1.3 1.3 5.7-5.7 5.7 5.7 1.3-1.3-5.7-5.7 5.7-5.7Z"
+              />
+          </svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        </section>
+        <div class="modal-quantity">
+          <div class="modal-field">
+
+            <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="field-group date-form-start">
+                <label class="form-label" for="date-start">Дата Заезда:</label>
+                <input class="field-input" type="text" id="date-start" name="date-start" placeholder="27 апреля 2020">
+              </p>
+              <span class="date-start-description">Мы не можем отправить вас в прошлое.</span>
+
+              <p class="field-group date-form-end">
+                <label class="form-label" for="date-end">Дата Выезда:</label>
+                <input class="field-input" type="text" id="date-end" name="date-end" placeholder="1 сентября 2023">
+              </p>
+              <span class="date-end-description">На эти даты есть свободные номера. Пока есть.</span>
+
+              <div class="modal-form-people">
+                <p class="field-group adults-form">
+                  <label class="form-label" for="adults">Взрослые:</label>
+                  <input class="field-input adults-input" type="text" id="adults" name="adults" placeholder="2">
+                </p>
+
+                <p class="field-group children-form">
+                  <label class="form-label" for="children">Дети:</label>
+                  <input class="field-input adults-input" type="text" id="children" name="children" placeholder="2">
+                </p>
+              </div>
+
+              <button class="button appointment-submit" type="submit">Найти</button>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
   </body>
 
 </html>
