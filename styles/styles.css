@@ -696,7 +696,7 @@ body {
 
 .modal-close-button:focus {
   background-color: #E6E6E6;
-  outline: 2px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 .modal-close-button:active {
@@ -784,6 +784,10 @@ body {
   border-radius: 4px;
 }
 
+.field-input::placeholder {
+  color: #000000;
+}
+
 .date-form-start {
   position: relative;
 }
@@ -812,11 +816,11 @@ body {
   margin: 0;
 }
 
-.field-input:hover {
+.field-input-date:hover {
   background-color: #E6E6E6;
 }
 
-.field-input:focus {
+.field-input-date:focus {
   background-color: #E6E6E6;
   outline: 2px solid #83B3D3;
 }
@@ -855,6 +859,9 @@ body {
   width: 31px;
   margin: 0;
   border-radius: 0;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0;
 }
 
 .tooltip {
@@ -952,6 +959,7 @@ body {
   text-transform: uppercase;
   margin: 0;
   padding: 18px 256px;
+  width: 577px;
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -1095,15 +1103,27 @@ body {
   content: "";
 }
 
-.control:hover .control-mark {
+.control-input[type="checkbox"]:hover + .control-mark {
   background-color: #E6E6E6;
 }
 
-.control:focus .control-mark {
+.control-input[type="checkbox"]:focus + .control-mark {
   outline: 4px solid #83B3D3;
 }
 
-.control:active .control-mark {
+.control-input[type="checkbox"]:active + .control-mark {
+  background-color: #bfbfbf;
+}
+
+.control-input[type="radio"]:hover + .control-mark {
+  background-color: #E6E6E6;
+}
+
+.control-input[type="radio"]:focus + .control-mark {
+  outline: 4px solid #83B3D3;
+}
+
+.control-input[type="radio"]:active + .control-mark {
   background-color: #bfbfbf;
 }
 
@@ -1156,6 +1176,7 @@ body {
 }
 
 .catalog-filter-label {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin-bottom: 46px;
@@ -1185,6 +1206,13 @@ body {
 .range-input-max {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+}
+
+.range-input-name {
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  color: #b3b3b3;
 }
 
 .range-input:hover {
