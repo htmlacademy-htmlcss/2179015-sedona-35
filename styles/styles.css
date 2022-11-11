@@ -723,6 +723,17 @@ body {
   padding: 0;
 }
 
+.adults-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.children-form {
+  display: flex;
+  justify-content: space-between;
+  width: 242px;
+}
+
 .modal-form-people {
   display: flex;
   justify-content: space-between;
@@ -736,7 +747,6 @@ body {
   color: #000000;
   font-weight: 700;
   margin: 0;
-  padding: 0;
   padding-right: 15px;
 }
 
@@ -750,22 +760,39 @@ body {
   height: 48px;
 }
 
-.field-button-minus {
+.field-name {
   display: flex;
   align-items: center;
   border: none;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-  padding: 23px 13px;
+  padding: 0;
+  margin: 0;
+  background-color: #F2F2F2;
 }
 
-.field-button-plus {
-  display: flex;
-  align-items: center;
-  border: none;
+.field-name-minus {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.field-name-plus {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
-  padding: 23px 13px;
+}
+
+.field-button:focus {
+  outline: 3px solid #82B3D3;
+}
+
+.field-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 23px;
+  height: 23px;
+  border-radius: 4px;
+  margin: 11px 7px;
+  padding: 0;
+  border: none;
 }
 
 .field-input {
@@ -884,27 +911,15 @@ body {
   fill: #ded7d3;
 }
 
-.field-button-minus:hover .field-choice {
+.field-button:hover .field-choice {
   fill: #000000;
 }
 
-.field-button-minus:focus .field-choice {
+.field-button:focus .field-choice {
   fill: #000000;
 }
 
-.field-button-minus:active .field-choice {
-  fill: #ded7d3;
-}
-
-.field-button-plus:hover .field-choice {
-  fill: #000000;
-}
-
-.field-button-plus:focus .field-choice {
-  fill: #000000;
-}
-
-.field-button-plus:active .field-choice {
+.field-button:active .field-choice {
   fill: #ded7d3;
 }
 
@@ -1166,20 +1181,20 @@ body {
   max-width: 288px;
   margin: 0;
   padding: 0;
-  padding-left: 167px;
-  padding-right: 70px;
+  margin-left: 167px;
+  margin-right: 70px;
 }
 
 .range-wrapper-inputs {
   display: flex;
   justify-content: center;
+  margin-bottom: 46px;
 }
 
 .catalog-filter-label {
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 46px;
 }
 
 .range-input {
