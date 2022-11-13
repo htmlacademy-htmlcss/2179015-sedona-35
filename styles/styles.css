@@ -211,8 +211,10 @@ body {
 }
 
 .hero {
+  box-sizing: border-box;
   margin: 0 auto;
   padding: 0;
+  padding-top: 51px;
   background-color: #808080;
   background-image: url("../images/divider.png"), url("../images/index-background.jpg");
   background-position: center bottom, center;
@@ -225,7 +227,6 @@ body {
   display: block;
   margin: 0 auto;
   padding: 0;
-  padding-top: 51px;
   list-style-type: none;
 }
 
