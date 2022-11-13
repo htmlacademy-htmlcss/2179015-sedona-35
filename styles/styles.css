@@ -101,6 +101,7 @@ body {
 .navigation-user .navigation-link {
   min-width: 16px;
   min-height: 22px;
+  padding: 22px 15px;
 }
 
 .navigation-user .navigation-item:nth-child(1) .navigation-link {
@@ -231,8 +232,8 @@ body {
 }
 
 .hero-item-images {
-  margin-top: 11px;
-  margin-bottom: 55px;
+  margin-top: 8px;
+  margin-bottom: 50px;
 }
 
 .characteristics {
@@ -420,11 +421,12 @@ body {
   color: #000000;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 54px;
+  margin-bottom: 52px;
   padding: 0;
 }
 
 .search-hotel {
+  display: inline-block;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
@@ -629,8 +631,8 @@ body {
 .footer-contacts {
   width: 720px;
   text-align: center;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 5px 0;
 }
 
 .contacts-phone:hover {
@@ -691,9 +693,11 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
+/*
 .modal-container-close {
   display: none;
 }
+*/
 
 .modal {
   position: relative;
@@ -1048,16 +1052,13 @@ body {
 .filter-breadcrumbs-list {
   display: flex;
   justify-content: start;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.filter-hotels-icon {
-  margin-right: 10px;
-}
-
-.filter-hotels-image {
+.filter-breadcrumbs-item {
   margin-right: 10px;
 }
 
@@ -1094,6 +1095,7 @@ body {
 .filter-catalog-group {
   width: 150px;
   padding: 0;
+  margin: 0;
   margin-right: 70px;
   border: none;
 }
@@ -1127,6 +1129,7 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  min-width: 150px;
 }
 
 .filter-catalog-item:not(:last-child) {
@@ -1238,7 +1241,7 @@ body {
 }
 
 .range-input {
-  width: 123px;
+  width: 120px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -1250,12 +1253,12 @@ body {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 20px;
-  margin-right: 2px;
 }
 
 .range-input-min {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
+  margin-right: 2px;
 }
 
 .range-input-max {
@@ -1527,7 +1530,7 @@ body {
 .product-card {
   display: grid;
   grid-template-columns: 140px 140px;
-  row-gap: 16px;
+  row-gap: 15px;
   column-gap: 20px;
   padding: 20px;
   background-color: #ffffff;
@@ -1683,15 +1686,16 @@ body {
   background-color: #F2F2F2;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 9px 22px;
+  padding: 8px 22px;
   margin: 0;
   border-radius: 4px;
 }
 
 .pagination {
   display: flex;
-  justify-content: space-between;
-  width: 400px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  min-width: 400px;
   list-style-type: none;
   margin: 0;
   margin-top: 40px;
@@ -1703,11 +1707,12 @@ body {
 }
 
 .pagination-link {
-  display: block;
+  display: flex;
+  align-items: center;
   box-sizing: border-box;
   width: 60px;
-  height: 60px;
-  padding: 12px 24px;
+  min-height: 60px;
+  justify-content: center;
   background-color: #82B3D3;
   color: #ffffff;
   font-size: 20px;
