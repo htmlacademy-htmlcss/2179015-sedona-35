@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -27,9 +28,12 @@
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">
-                Поиск
-              </span>
+              <span class="visually-hidden">Поиск</span>
+              <svg class="navigation-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m19.5 18-3.7-3.7a8 8 0 0 0 1.7-4.8 8 8 0 1 0-3.1 6.3l3.7 3.7 1.4-1.5Zm-10-2.5a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z"
+                  fill="#000" />
+              </svg>
             </a>
           </li>
           <li class="navigation-item">
@@ -59,7 +63,7 @@
           <h1 class="filter-title">Гостиницы Седоны</h1>
           <ul class="filter-breadcrumbs-list">
             <li class="filter-breadcrumbs-item">
-              <a class="filter-hotels-icon" href="#">
+              <a class="filter-hotels-icon" href="index.html">
                 <span class="visually-hidden">На главную</span>
                 <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" fill="#fff" />
@@ -67,6 +71,7 @@
                 </svg>
               </a>
             </li>
+
             <li class="filter-breadcrumbs-item">
               <span class="visually-hidden">Поиск гостиниц</span>
               <svg class="filter-hotels-image" width="8" height="11" viewBox="0 0 8 11" fill="none"
@@ -75,8 +80,6 @@
                   d="M7 5 2.1.7C1.9.5 1.4.5 1 .7c-.3.3-.2.8 0 1l4.2 3.8-4 3.7c-.3.3-.3.8 0 1 0 .1.3.3.5.3l.5-.3L6.9 6c.4-.3.4-.8 0-1Z"
                   fill="#fff" />
               </svg>
-            </li>
-            <li class="filter-breadcrumbs-item">
               <a class="filter-breadcrumbs">Гостиницы</a>
             </li>
           </ul>
@@ -182,43 +185,28 @@
               <option value="expensive">Сначала дорогие</option>
               <option value="popular">Сначала популярные</option>
             </select>
-            <a class="card-grid-toggle card-grid-toggle-current" type="button" href="#">
+            <a class="card-grid-toggle card-grid-toggle-current" href="#">
               <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#a)" fill="#000">
                   <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" />
                 </g>
-                <defs>
-                  <clipPath id="a">
-                    <path fill="#fff" d="M0 0h16v14H0z" />
-                  </clipPath>
-                </defs>
               </svg>
               <span class="visually-hidden">Показать карточки</span>
             </a>
-            <a class="card-grid-toggle" type="button" href="#">
+            <a class="card-grid-toggle" href="#">
               <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#a)" fill="#000">
                   <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
                 </g>
-                <defs>
-                  <clipPath id="a">
-                    <path fill="#fff" d="M0 0h16v14H0z" />
-                  </clipPath>
-                </defs>
               </svg>
               <span class="visually-hidden">Показать карточки с названиями</span>
             </a>
-            <a class="card-grid-toggle" type="button" href="#">
+            <a class="card-grid-toggle" href="#">
               <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#a)" fill="#000">
                   <path
                     d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" />
                 </g>
-                <defs>
-                  <clipPath id="a">
-                    <path fill="#fff" d="M0 0h16v14H0z" />
-                  </clipPath>
-                </defs>
               </svg>
               <span class="visually-hidden">Показать список</span>
             </a>
@@ -296,7 +284,7 @@
               <p class="hotels-raiting">Рейтинг: 5,0</p>
             </li>
           </ul>
-          <hr width="1060px" color="#E6E6E6">
+          <div class="line-product"></div>
           <ul class="pagination">
             <li class="pagination-item">
               <a class="pagination-link pagination-current" href="#">1</a>
